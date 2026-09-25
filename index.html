@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mamta Patil | Data Science & AI</title>
+
+    <meta name="description" content="Mamta Patil - Computer Science Engineering student specializing in Data Science, Machine Learning and Artificial Intelligence.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f19;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(11, 15, 25, 0.95);
+            border-bottom: 1px solid #252b3a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #d6d9e0;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 90px 8%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero {
+            max-width: 800px;
+        }
+
+        .hero p:first-child {
+            color: #8ea2ff;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 7vw, 75px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #b8becb;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            color: #9ca3b1;
+            max-width: 650px;
+            margin-bottom: 30px;
+            font-size: 17px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border: 1px solid #394154;
+            border-radius: 7px;
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #0b0f19;
+        }
+
+        .primary {
+            background: #ffffff;
+            color: #0b0f19;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            color: #aeb4c0;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            border: 1px solid #303746;
+            padding: 9px 15px;
+            border-radius: 6px;
+            color: #d9dde5;
+            background: #111624;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .project {
+            background: #111624;
+            border: 1px solid #252c3b;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.25s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #515c76;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .project p {
+            color: #9da5b4;
+            margin-bottom: 18px;
+        }
+
+        .tech {
+            font-size: 13px;
+            color: #8795b5;
+            margin-bottom: 18px;
+        }
+
+        .project a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .education-card {
+            background: #111624;
+            border: 1px solid #252c3b;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .education-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: #9da5b4;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        .contact-text {
+            color: #aeb4c0;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #252b3a;
+            color: #747b8b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 750px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            section {
+                padding: 70px 6%;
+            }
+
+            #home {
+                min-height: 80vh;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Mamta Patil</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+
+        <div class="hero">
+
+            <p>HELLO, I'M</p>
+
+            <h1>Mamta Patil</h1>
+
+            <h2>Data Science | Machine Learning | Artificial Intelligence</h2>
+
+            <p class="hero-description">
+                Computer Science Engineering student passionate about building
+                data-driven and AI-powered applications. I enjoy working with
+                Python, machine learning, data analytics and real-time systems.
+            </p>
+
+            <div class="buttons">
+
+                <a class="btn primary"
+                   href="#projects">
+                    View Projects
+                </a>
+
+                <a class="btn"
+                   href="https://github.com/Mamta-codes"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a class="btn"
+                   href="https://www.linkedin.com/in/mamta-patil-81bb04336/"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            I am a Computer Science Engineering student at Ajeenkya DY Patil
+            University with a strong interest in Data Science, Machine Learning
+            and Artificial Intelligence. I have worked on projects involving
+            exploratory data analysis, predictive modeling, automated data
+            analysis and real-time fraud detection. I am currently looking
+            for opportunities where I can apply my technical skills and
+            continue learning through real-world projects.
+        </p>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+
+            <span class="skill">Python</span>
+            <span class="skill">Pandas</span>
+            <span class="skill">NumPy</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Scikit-learn</span>
+            <span class="skill">Matplotlib</span>
+            <span class="skill">Seaborn</span>
+            <span class="skill">Plotly</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">Excel</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Apache Kafka</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Streamlit</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects">
+
+
+            <div class="project">
+
+                <h3>Fraud Sentinel</h3>
+
+                <p>
+                    Real-time fraud detection system using machine learning,
+                    Apache Kafka and FastAPI to process and classify
+                    financial transactions.
+                </p>
+
+                <div class="tech">
+                    Python · Scikit-learn · Kafka · FastAPI · Docker
+                </div>
+
+                <a href="https://github.com/Mamta-codes/fraud-detection-streaming-system"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>AI-Powered Data Analysis Platform</h3>
+
+                <p>
+                    Streamlit-based application that automates data analysis,
+                    visualization and machine learning workflows with
+                    AI-assisted insights.
+                </p>
+
+                <div class="tech">
+                    Python · Pandas · Plotly · Scikit-learn · SHAP · Streamlit
+                </div>
+
+                <a href="https://github.com/Mamta-codes/automated-data-analysis-platform"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Telco Customer Churn Prediction</h3>
+
+                <p>
+                    Machine learning project that analyzes customer behavior
+                    and predicts customer churn using classification models.
+                </p>
+
+                <div class="tech">
+                    Python · Pandas · Scikit-learn · Logistic Regression · Random Forest
+                </div>
+
+                <a href="https://github.com/Mamta-codes"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Superstore Sales & Profit Analysis</h3>
+
+                <p>
+                    Exploratory data analysis project identifying sales,
+                    profitability and business trends across products,
+                    regions and customer segments.
+                </p>
+
+                <div class="tech">
+                    Python · Pandas · NumPy · Matplotlib · Seaborn
+                </div>
+
+                <a href="https://github.com/Mamta-codes/superstore-sales-profit-analysis"
+                   target="_blank">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <h3>Bachelor of Engineering — Computer Science & Engineering</h3>
+
+            <p>
+                Ajeenkya DY Patil University, Pune
+            </p>
+
+            <p>
+                Expected Graduation: 2028
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p class="contact-text">
+            I'm open to internship and learning opportunities in
+            Data Science, Machine Learning and AI.
+        </p>
+
+        <div class="buttons" style="justify-content:center;">
+
+            <a class="btn primary"
+               href="mailto:mamta2818@gmail.com">
+                Email Me
+            </a>
+
+            <a class="btn"
+               href="https://www.linkedin.com/in/mamta-patil-81bb04336/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 Mamta Patil. Built with HTML & CSS.
+    </footer>
+
+</body>
+</html>
